@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iak.aplikasicampusiak.login.RegistrasiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/mBtnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login dengan FaceBook"
+            android:background="@color/untukButton"
+            android:layout_margin="@dimen/padding10"
+            android:onClick="onClickButton"/>
+
+        <Button
+            android:id="@+id/mBtnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login dengan Google"
+            android:layout_margin="@dimen/padding10"
+            android:onClick="onClickButton"/>
+
+        <Button
+            android:id="@+id/mBtnEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login dengan Email"
+            android:background="@color/uangKeluar"
+            android:textColor="@color/putih"
+            android:layout_margin="@dimen/padding10"
+            android:onClick="onClickButton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@id/mTxtLupaPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/DarkGreen"
+            android:text="Lupa Password ? "
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick=""/>
+
+        <TextView
+            android:id="@+id/mTxtLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/hitam"
+            android:text="Login"/>
+    </LinearLayout>
+
+</RelativeLayout>

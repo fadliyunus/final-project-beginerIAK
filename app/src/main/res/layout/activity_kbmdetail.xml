@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iak.aplikasicampusiak.KbmdetailActivity">
+
+    <ImageView
+        android:id="@+id/wall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Jadwal KBM Hari Senin"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/hitam"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:id="@+id/kata_about"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="left">
+
+            <TextView
+                style="@style/namaBarang"
+                android:text="Mata Kulia =>" />
+            <TextView
+                style="@style/hargaBarang"
+                android:text="Dosen =>"/>
+            <TextView
+                style="@style/namaBarang"
+                android:layout_marginTop="30dp"
+                android:text="Mata Kulia =>" />
+            <TextView
+                style="@style/hargaBarang"
+                android:text="Dosen =>"/>
+            <TextView
+                style="@style/namaBarang"
+                android:layout_marginTop="30dp"
+                android:text="Mata Kulia =>" />
+            <TextView
+                style="@style/hargaBarang"
+                android:text="Dosen =>"/>
+            <TextView
+                style="@style/namaBarang"
+                android:layout_marginTop="30dp"
+                android:text="Mata Kulia =>" />
+            <TextView
+                style="@style/hargaBarang"
+                android:text="Dosen =>"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="left">
+
+            <TextView
+                style="@style/namaBarang"
+                android:text="Android Dasar" />
+            <TextView
+                style="@style/hargaBarang"
+                android:text="Prof, Jumilah"/>
+            <TextView
+                style="@style/namaBarang"
+                android:layout_marginTop="30dp"
+                android:text="Android Intermedith" />
+            <TextView
+                style="@style/hargaBarang"
+                android:text="Jamal S.com"/>
+            <TextView
+                style="@style/namaBarang"
+                android:layout_marginTop="30dp"
+                android:text="Mahir Android " />
+            <TextView
+                style="@style/hargaBarang"
+                android:text="Juki S.com"/>
+            <TextView
+                style="@style/namaBarang"
+                android:layout_marginTop="30dp"
+                android:text="Android Pengembang" />
+            <TextView
+                style="@style/hargaBarang"
+                android:text="Sabar S.com"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

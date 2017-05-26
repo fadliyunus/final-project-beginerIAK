@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iak.aplikasicampusiak.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/wall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back_login"/>
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/university"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/LL"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/mTxtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="User Name*"/>
+
+        <EditText
+            android:id="@+id/mTxtPassword"
+            android:layout_below="@id/mTxtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password*"
+            android:singleLine="true"
+            android:password="true"
+            android:padding="10dp" />
+
+        <CheckBox
+            android:id="@+id/mChkLihatPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mTxtPassword"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="Lihat Paswword"
+            android:onClick="onClickLihatPassword"/>
+
+        <TextView
+            android:id="@+id/mTxtAlert"
+            android:layout_below="@id/mChkLihatPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/alert"
+            android:text="Harap Isi Username / Password Anda !"/>
+
+        <!-- Untuk menaruh Button -->
+        <LinearLayout
+            android:id="@+id/LL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mTxtAlert">
+
+            <Button
+                android:id="@+id/mBtnRegister"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/untukButton"
+                android:layout_margin="10dp"
+                android:text="Daftar"
+                android:onClick="onClickRegister"/>
+
+            <Button
+                android:id="@+id/mBtnLogin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/untukButton"
+                android:layout_margin="10dp"
+                android:text="Login"
+                android:onClick="onClickLogin"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mTxtLupaPassword"
+            android:layout_below="@id/LL1"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:text="Lupa Password ?"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
